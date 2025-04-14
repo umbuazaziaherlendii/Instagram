@@ -1,0 +1,64 @@
+/* Background dan Gaya Halaman */
+body {
+    background-color: #ffccf2;
+    font-family: 'Dancing Script', cursive; /* Menggunakan font lucu dari Google Fonts */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Judul dengan font lucu */
+h1 {
+    font-size: 3em;
+    color: #ff3385;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive; /* Menggunakan font Pacifico untuk judul */
+}
+
+/* Gambar Surat */
+.letter {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.letter:hover {
+    transform: scale(1.1);
+}
+
+/* Animasi Love dan Kalimat Cinta */
+.animation-container {
+    display: none;
+    position: relative;
+    margin-top: 50px;
+}
+
+.hearts {
+    font-size: 40px;
+    animation: heart-animation 2s infinite;
+}
+
+@keyframes heart-animation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.love-text {
+    font-size: 2.5em;
+    color: #ff69b4;
+    margin-top: 20px;
+    display: none;
+    animation: fade-in 2s ease-in-out;
+}
+
+/* Efek Fade-in pada Kalimat */
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
